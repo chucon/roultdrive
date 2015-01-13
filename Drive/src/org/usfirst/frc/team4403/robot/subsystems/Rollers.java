@@ -23,5 +23,10 @@ public class Rollers extends Subsystem {
     	leftRoller.set(0.5);
     	rightRoller.set(-0.5);
     }
+    
+    public void stop(){
+    	leftRoller.set(0);
+    	rightRoller.set(0);
+    }
 }
 

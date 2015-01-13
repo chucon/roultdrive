@@ -14,8 +14,8 @@ public class OI {
     Button button2 = new JoystickButton(stick, 2);
 
 public OI(){
-	 button1.whenPressed(new intake());
-	 button2.whenPressed(new eject());
+	 button1.whileHeld(new intake());
+	 button2.whileHeld(new eject());
 }
 
 }
