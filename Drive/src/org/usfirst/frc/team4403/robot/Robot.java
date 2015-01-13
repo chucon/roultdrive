@@ -11,16 +11,14 @@ import org.usfirst.frc.team4403.robot.subsystems.Rollers;
 
 public class Robot extends IterativeRobot {
 
-	public static Chassis chassis;
-	public static Rollers rollers;
+	public static Chassis chassis = new Chassis();
+	public static Rollers rollers = new Rollers();
 	public static OI oi;
 	
     Command autonomousCommand;
 
     public void robotInit() {
 		oi = new OI();
-		chassis = new Chassis();
-		rollers = new Rollers();
     }
 	
 	public void disabledPeriodic() {

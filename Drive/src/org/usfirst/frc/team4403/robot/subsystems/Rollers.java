@@ -15,13 +15,23 @@ public class Rollers extends Subsystem {
     }
     
     public void intake(){
-    	leftRoller.set(-0.5);
-    	rightRoller.set(0.5);
+    	leftRoller.set(1);
+    	rightRoller.set(1);
     }
     
     public void eject(){
-    	leftRoller.set(0.5);
-    	rightRoller.set(-0.5);
+    	leftRoller.set(-1);
+    	rightRoller.set(-1);
+    }
+    
+    public void left(){
+    	leftRoller.set(1);
+    	rightRoller.set(0);
+    }
+    
+    public void right(){
+    	rightRoller.set(1);
+    	leftRoller.set(0);
     }
     
     public void stop(){
