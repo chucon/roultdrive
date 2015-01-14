@@ -1,22 +1,22 @@
 package org.usfirst.frc.team4403.robot.commands;
 
 import org.usfirst.frc.team4403.robot.Robot;
-import org.usfirst.frc.team4403.robot.subsystems.Rollers;
 
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class intake extends Command {
+public class Eject extends Command {
 	
-    public intake() {
+    public Eject() {
+        // Use requires() here to declare subsystem dependencies
         requires(Robot.rollers);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.rollers.intake();
+    	Robot.rollers.eject();
     }
 
     // Called repeatedly when this Command is scheduled to run
