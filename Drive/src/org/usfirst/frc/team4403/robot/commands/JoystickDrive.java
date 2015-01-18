@@ -16,7 +16,7 @@ public class JoystickDrive extends Command {
     }
 
     protected void execute() {
-    	 Robot.chassis.drive.arcadeDrive(Robot.oi.stick.getY(), -Robot.oi.stick.getX());
+    	 Robot.chassis.drive.arcadeDrive(Robot.oi.getY(), -Robot.oi.getX());
     }
 
     protected boolean isFinished() {
