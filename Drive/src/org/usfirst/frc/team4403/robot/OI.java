@@ -18,6 +18,9 @@ public class OI {
     Button button4 = new JoystickButton(stick, 4);
     Button button5 = new JoystickButton(stick, 5);    
     Button button6 = new JoystickButton(stick, 6);
+    
+    public Joystick launchpad = new Joystick(RobotMap.launchpadPort);
+    Button boton1 = new JoystickButton(launchpad, 1);
 
 public OI(){
 	 button1.whenPressed(new Intake());
@@ -26,6 +29,9 @@ public OI(){
 	 button4.whenReleased(new StopRollers());
 	 button5.whenPressed(new LeftWheel());
 	 button6.whenPressed(new RightWheel());
+	 
+	 boton1.whenPressed(new Intake());
+	 boton1.whenReleased(new StopRollers());
 }
 
 public double getY(){

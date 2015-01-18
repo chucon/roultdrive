@@ -8,5 +8,6 @@ public class RobotMap {
     public static int rightRoller = 3;
     //Puertos 
     public static int joystickPort = 0;
+    public static int launchpadPort = 1;
     
 }
